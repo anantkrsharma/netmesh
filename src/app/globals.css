@@ -20,7 +20,7 @@
 }
 
 body {
-  background: var(--background);
+  background: linear-gradient(135deg, #181c1b 0%, #23272a 60%, #101112 100%);
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
   min-height: 100vh;
@@ -30,10 +30,10 @@ body {
 
 ::-webkit-scrollbar {
   width: 8px;
-  background: #181c24;
+  background: #23272a;
 }
 ::-webkit-scrollbar-thumb {
-  background: #23263a;
+  background: #00ffb3;
   border-radius: 8px;
 }
 
