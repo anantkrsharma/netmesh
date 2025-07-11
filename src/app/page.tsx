@@ -21,7 +21,7 @@ export default function Home() {
   );
 
   return (
-    <div className="bg-gradient-to-br from-[#181c1b] via-[#23272a] to-[#101112] min-h-screen w-full text-white font-sans">
+    <div className="bg-gradient-to-br from-[#111313] via-[#181a1c] to-[#040505] min-h-screen w-full text-white font-sans">
       {/* Navbar */}
       <header className="fixed top-0 left-0 w-full z-30 flex justify-center">
         <nav className="mt-4 mx-4 w-[95vw] max-w-5xl rounded-2xl bg-gradient-to-r from-[#101112cc] via-[#23272acc] to-[#181c1bcc] border border-[#00ffb3]/30 shadow-lg flex items-center justify-between px-8 py-3 backdrop-blur-md">
