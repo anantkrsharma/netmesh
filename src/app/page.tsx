@@ -1,6 +1,5 @@
 'use client';
 
-import Image from "next/image";
 import { ShieldCheck, Network, Users, Server, ArrowRight, Download, Github } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
