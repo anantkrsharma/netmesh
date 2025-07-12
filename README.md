@@ -1,62 +1,88 @@
-# NetMesh
+# NetMesh — A Decentralized VPN Powered by Solana & WireGuard
 
-A decentralized VPN powered by Solana and WireGuard. Connect to community-run nodes with one tap. No accounts, no trackers, just private, censorship-resistant bandwidth.
+> **Private. Trustless. Community-Run.**  
+> Connect to the internet through community-run WireGuard nodes, with on-chain node registration and payments secured by Solana.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://github.com/anantkrsharma/netmesh/blob/main/LICENSE)
+---
 
-## The Problem
+## Why NetMesh?
 
-Conventional VPNs are centralized and opaque. Users are forced to trust a single company with their data, which undermines the core purpose of a privacy tool. When you don't know how traffic is routed or if logs are being stored, you can't be sure you're truly private.
+Most commercial VPNs are closed, centralized, and opaque. Users have zero visibility into how traffic is routed, whether logs are kept, or who controls the infra.
 
-## The Solution
+**NetMesh** solves this with a simple promise:  
+- **One-tap connection** to community-operated nodes  
+- **No accounts, no trackers — just bandwidth**  
+- **Node operators rewarded trustlessly** via Solana smart contracts
 
-NetMesh is a decentralized VPN (dVPN) protocol built to solve this. It provides private, fast, and censorship-resistant internet access through an open, community-powered network.
-
-We use the Solana blockchain for a transparent registry of nodes and the high-performance WireGuard® protocol for state-of-the-art encryption. The result is a more honest and trustworthy alternative to traditional VPNs.
-
-## Core Concepts
-
-*   **Truly Decentralized:** The network is run by a global community of node operators. There is no central point of control or failure.
-*   **Modern & Secure:** Built with WireGuard® for high-performance, state-of-the-art encryption.
-*   **Transparent & Verifiable:** We use the Solana blockchain for a public, low-cost registry of nodes. Smart contracts manage operator rewards, ensuring fairness.
-*   **Anonymous by Design:** No accounts, no emails, and no personal information required. Just connect and browse.
-*   **Community Governed:** Anyone can support the network by running a node and earn rewards for the bandwidth they provide.
+---
 
 ## How It Works
 
-1.  **Node Registration:** Operators register their servers on the Solana blockchain, detailing their location and bandwidth price.
-2.  **Discovery:** The NetMesh client fetches the list of available nodes directly from the on-chain registry.
-3.  **Connection:** The user establishes a secure WireGuard® tunnel to a community node with a single tap.
-4.  **Incentives:** Node operators are automatically compensated via Solana smart contracts based on the bandwidth they provide.
+1. **Users** open the NetMesh app → browse on-chain registered WireGuard nodes → connect in one tap.
+2. **Node operators** run nodes on Raspberry Pis or EC2 servers, register them on-chain, and earn micro-payments for providing bandwidth.
+3. **Solana** smart contracts handle the transparent node registry and payments to operators.
 
-## Tech Stack
+---
 
-*   **Frontend**: Next.js (App Router), TypeScript, Tailwind CSS
-*   **Blockchain**: Solana (Smart Contracts in Rust)
-*   **VPN Protocol**: WireGuard®
+## Architecture
 
-## Getting Started
+**Core components:**
+- WireGuard VPN setup on multiple community nodes  
+- Solana smart contract for node registry and rewards  
+- React Native mobile app for one-tap connection  
+- Infrastructure dashboard for monitoring nodes  
+- Documentation for community operators to join and earn
 
-This repository contains the source code for the official NetMesh website. To run the project locally:
+---
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/anantkrsharma/netmesh.git
-    cd netmesh
-    ```
+## Project Roadmap & Milestones
 
-2.  **Install dependencies:**
-    ```bash
-    npm install
-    ```
+### **Milestone 1 — Infrastructure + Contracts (Month 1)**
+- Deploy working WireGuard VPN setup on 5 EC2 nodes
+- Write and deploy the Solana smart contract for node registration
+- Publish open documentation for running validator nodes (EC2 or Raspberry Pi)
 
-3.  **Run the development server:**
-    ```bash
-    npm run dev
-    ```
+### **Milestone 2 — Mobile App + Test Network (Month 2)**
+- Build a React Native mobile app with one-tap VPN connect
+- Integrate Solana smart contract to fetch node list + allow users to connect
+- Launch a testnet version with 20 live nodes (EC2 + Raspberry Pi)
+- Create a landing page and waitlist system for beta users
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+### **Milestone 3 — Pilot Network + Community Onboarding (Month 3)**
+- Onboard 15–20 community validators (distribute Raspberry Pis)
+- Pay validators small incentives to keep nodes live for testing
+- Run a public test with early users and track connection success rate
+- Finalize infrastructure dashboard + submit final report
 
-## Community & Contribution
+---
 
-NetMesh is an open-source project. We welcome contributions of all kinds, from code and documentation to design and feedback. The most impactful way to support the network is by running a node.
+## Primary Key Performance Indicator (KPI)
+
+> **Success** = 100+ successful decentralized VPN session initiations from the mobile app using registered nodes  
+> + 15–20 active validator nodes running reliably in the community
+
+---
+
+## 👥 How to Contribute
+
+- Join the [waitlist](#) to be a testnet user  
+- Follow the [node operator guide](#) to run your own node
+- Help test the smart contract or mobile app — [open issues](#)
+
+---
+
+## 📄 License
+
+MIT — open source, forever.  
+This project is community-first — all infra code, smart contracts, and client apps will remain open and auditable.
+
+---
+
+## 🤝 Sponsors & Community
+
+This work is supported by the Solana ecosystem and Superteam Earn.  
+If you’d like to help fund Raspberry Pis for community validators, reach out via [issues](#) or [email](#).
+
+---
+
+**NetMesh** — Trust your VPN again.
